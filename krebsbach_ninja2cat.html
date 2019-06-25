@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>jQuery Ninja 2 Cat Assignment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="krebsbach_ninja2cat.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuery script and source -->
+
+        <script>
+            $(document).ready(function() { // required for ALL jQuery scripts
+                $("img").click(function() { // when an image is clicked, the following happens...
+                  $(this).attr("src",$(this).attr("data-alt-src"))
+                  })
+            });        
+            
+            //$(this).prop("src",$(this).attr("data-alt-src"));   // THIS element with attributeName "src" (the original image) is changed to THIS element's alternate attribute 
+
+        </script> 
+
+        
+
+
+    </head>
+    <body>
+        <div id="images">
+            <img src="img/ninja0.png" data-alt-src="img/cat0.png" alt="0 Ninja Piece">
+            <img src="img/ninja1.png" data-alt-src="img/cat1.png" alt="1 Ninja Piece">
+            <img src="img/ninja2.png" data-alt-src="img/cat2.png" alt="2 Ninja Piece">
+            <img src="img/ninja3.png" data-alt-src="img/cat3.png" alt="3 Ninja Piece">
+            <img src="img/ninja4.png" data-alt-src="img/cat4.png" alt="4 Ninja Piece">
+        </div>
+    </body>
+</html>

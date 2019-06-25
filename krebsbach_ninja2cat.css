@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    width: 181px;
+    height: 42px;
+    margin: 1px;
+}
+#images{
+    display: inline-block;
+    align-items: center;
+    width: 182px;
+}
